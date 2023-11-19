@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Liên Hệ</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Liên Hệ</h2>
+  <form id="contactForm">
+    <div class="input-group">
+      <label for="name">Họ và tên:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="input-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="input-group">
+      <label for="message">Tin nhắn:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+    </div>
+    <button type="submit">Gửi</button>
+  </form>
+  <div id="successMessage" class="hidden">Cảm ơn bạn! Chúng tôi sẽ liên hệ lại sớm.</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
